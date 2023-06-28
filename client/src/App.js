@@ -1,5 +1,12 @@
 import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import navbar from "./components/navbar/Navbar";
+import about from "./components/about/About";
+import login from "./components/login/Login";
+import signup from "./components/signup/Signup";
+import contact from "./components/contact/Contact";
+import footer from "./components/footer/Footer";
 
 function App() {
   
