@@ -16,11 +16,6 @@ print speed
 
 */
 const filamentSchema = new Schema({
-  filamentName: {
-    type: String,
-    required: true,
-    trim: true,
-  },
   filamentType: {
     type: String,
     required: true,
@@ -36,6 +31,14 @@ const filamentSchema = new Schema({
   },
   printSpeed: {
     type: String,
+    required: true,
+  },
+  upVote: {
+      type: Int,
+      required: true,
+  },
+  downVote: {
+    type: Int,
     required: true,
   },
   // DO WE NEED TO ASSIGN UNIQUE ID TO THIS SCHEMA?
