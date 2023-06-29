@@ -27,15 +27,15 @@ const filamentSchema = new Schema({
     trim: true,
   },
   printTemp: {
-    type: Int,
+    type: String,
     required: true,
   },
   bedTemp: {
-    type: Int,
+    type: String,
     required: true,
   },
   printSpeed: {
-    type: Int,
+    type: String,
     required: true,
   },
   // DO WE NEED TO ASSIGN UNIQUE ID TO THIS SCHEMA?
