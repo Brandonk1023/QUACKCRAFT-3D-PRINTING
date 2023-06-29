@@ -6,6 +6,11 @@ const bcrypt = require('bcrypt');
 
 // create a new schema called userSchema with props from Schema model
 const userSchema = new Schema({
+  userName: {
+    type: String,
+    required: true,
+    trim: true,
+  },
   firstName: {
     type: String,
     required: true,
