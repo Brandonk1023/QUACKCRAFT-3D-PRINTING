@@ -33,3 +33,5 @@ const filamentSeed = [
         printSpeed: '40-50 mm/s',
     }
 ]
+
+module.exports = filamentSeed;
