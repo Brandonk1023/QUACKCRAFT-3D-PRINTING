@@ -1,14 +1,11 @@
 
+import React, { useState } from "react";
 import logo from './logo.svg';
-// import React, { useState } from 'react';
 import './App.css';
 import { Login } from "./components/login/Login";
-
-import { Signup } from "./components/signup/Signup";
+import { Register } from "./components/register/Register";
 
 // import navbar from "./components/navbar/Navbar";
-// import login from "./components/login/Login";
-// import signup from "./components/signup/Signup";
 // import footer from "./components/footer/Footer";
 // import logout from "./components/logout/Logout";
 // import userProfile from "./components/UserProfile";
@@ -16,10 +13,18 @@ import { Signup } from "./components/signup/Signup";
 // import pageList from "./components/pageList/PageList"
 
 function App() {
+  const [currentForm, setCurrentForm] = useState('login');
+
+  const toggleForm = (formFirstname) => {
+    setCurrentForm(formFirstname);
+  }
   
   return (
     <div className="App">
-     <Login />
+      {
+        currentForm === "Login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+      }
+     {/* <Login /> */}
     </div>
   );
 }
