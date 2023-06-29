@@ -4,20 +4,24 @@ const { gql } = require('apollo-server-express');
 const typeDefs = gql`
 
 type User {
-                            /*
-                            id?
-                            firstName
-                            lastName
-                            email
-                            password
-                            */
+  _id: ID
+  userName: String
+  firstName: String
+  lastName: String
+  email: String
 }
 
 type Filament {
-
+  _id: ID
+  filamentType: String
+  printTemp: String
+  bedTemp: String
+  printSpeed: String
+  upVote: Int
+  downVote: Int
 }
 
-type Printable {
+type PrintableFile {
 
 }
 
@@ -27,7 +31,7 @@ type Auth {
   }
 
 type Query {
-  user: User
+  user(userId: ID): [User]
                             /*
                             ADD OTHER QUERIES HERE
                             */
