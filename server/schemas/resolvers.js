@@ -1,8 +1,8 @@
 // import the AuthenticationError class which is used to throw errors if a user is not logged in.
 const { AuthenticationError } = require('apollo-server-express');
 
-// import User, Filament, Printable models from the models directory so the data can be used by the resolvers.
-const { User, Filament, Printable } = require('../models');
+// import User, Filament, PrintableFile models from the models directory so the data can be used by the resolvers.
+const { User, Filament, PrintableFile } = require('../models');
 
 // import signToken function to create a JWT token that can be used to authenticate users
 const { signToken } = require('../utils/auth.js');
@@ -12,7 +12,12 @@ const { signToken } = require('../utils/auth.js');
 REVIEW CLASS ACTIVITY FOR MORE GUIDANCE
 */
 const resolvers = {
-  Query: {},
+  Query: {
+    user: (parent, { userId }) => {
+      const params = userId ? { _id: userId } : {};
+      return User.find(params);
+    },
+  },
 };
 
 // The Query type has resolvers for FINDING, READING, ETC.
