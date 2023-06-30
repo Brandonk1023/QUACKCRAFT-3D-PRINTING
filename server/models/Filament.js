@@ -34,16 +34,16 @@ const filamentSchema = new Schema({
     required: true,
   },
   upVote: {
-      type: Int,
-      required: true,
+    type: Number,
+    required: true,
   },
   downVote: {
-    type: Int,
+    type: Number,
     required: true,
   },
   // DO WE NEED TO ASSIGN UNIQUE ID TO THIS SCHEMA?
 });
 
-const User = mongoose.model('Filament', filamentSchema);
+const Filament = mongoose.model('Filament', filamentSchema);
 
 module.exports = Filament;
