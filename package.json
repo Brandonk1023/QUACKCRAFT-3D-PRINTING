@@ -1,5 +1,5 @@
 {
-  "name": "zero-ducks-given",
+  "name": "quackcraft-3D-printing",
   "version": "1.0.0",
   "description": "Project 3",
   "main": "server/server.js",
@@ -18,10 +18,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Brandonk1023/ZERO-DUCKS-GIVEN/"
+  "dependencies": {
+    "apollo-server-express": "^3.6.2",
+    "bcrypt": "^4.0.1",
+    "express": "^4.17.2",
+    "graphql": "^16.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.9.2",
+    "stripe": "^8.67.0"
   },
-  "homepage": "https://github.com/Brandonk1023/ZERO-DUCKS-GIVEN/",
+  "bugs": {
+    "url": "https://github.com/Brandonk1023/QUACKCRAFT-3D-PRINTING/"
+  },
+  "homepage": "https://github.com/Brandonk1023/QUACKCRAFT-3D-PRINTING/",
   "devDependencies": {
     "concurrently": "^7.6.0",
     "nodemon": "^2.0.22"
