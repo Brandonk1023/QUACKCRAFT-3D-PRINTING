@@ -1,6 +1,9 @@
 // require the Mongoose (remember: Mongoose is the MongoDB Object Document Mapper for Node.js)
 const mongoose = require('mongoose');
 
+// import the Schema class from mongoose module
+const { Schema } = mongoose;
+
 // require bcrypt (password hashing)
 const bcrypt = require('bcrypt');
 
