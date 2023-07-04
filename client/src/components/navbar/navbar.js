@@ -7,7 +7,7 @@ function Navbar() {
         <div className='navbar'>
             <div className='wrapper'>
                 <div className='left'>
-                   <a href="#about" className='brandLogo'>Zero Ducks Given</a>
+                   <a href="#about" className='brandLogo'>QuackCraft 3D Printing, Inc.</a>
                    <div className='itemContainer'>
                         <ul>
                             <li></li>

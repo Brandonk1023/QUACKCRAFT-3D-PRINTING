@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Project 3",
   "main": "server/server.js",
-   "scripts": {
+  "scripts": {
     "start": "node server/server.js --ignore client",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
@@ -25,6 +25,7 @@
     "graphql": "^16.3.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.9.2",
+    "next": "^13.4.7",
     "stripe": "^8.67.0"
   },
   "bugs": {
@@ -36,4 +37,3 @@
     "nodemon": "^2.0.22"
   }
 }
- 
