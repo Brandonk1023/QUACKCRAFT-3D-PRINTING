@@ -1,8 +1,16 @@
 {
-  "name": "zero-ducks-given",
+  "name": "quackcraft-3d-printing",
   "version": "0.1.0",
   "private": true,
+  "prettier": {
+    "arrowParens": "avoid",
+    "semi": false,
+    "singleQuote": true,
+    "useTabs": false
+  },
   "dependencies": {
+    "@apollo/client": "^3.5.8",
+    "@chakra-ui/react": "^1.5.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@material-ui/core": "^4.12.3",
@@ -12,14 +20,23 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^13.5.0",
+    "graphql": "^15.4.0",
+    "jwt-decode": "^3.1.2",
+    "framer-motion": "^4",
     "node-sass": "^9.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^17.0.2",
     "react-router": "^6.14.1",
     "react-router-dom": "^6.14.1",
+    "react-router-dom": "^5.2.0",
+    "react-dropzone": "^14.2.3",
     "react-scripts": "5.0.1",
+    "simplebar-react": "^2.3.0",
     "web-vitals": "^3.3.2"
+  },
+  "devDependencies": {
+    "prop-types": "^15.7.2"
   },
   "scripts": {
     "start": "react-scripts start",

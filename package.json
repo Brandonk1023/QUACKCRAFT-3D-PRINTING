@@ -27,6 +27,7 @@
     "mongoose": "^6.9.2",
     "react-router": "^6.14.1",
     "react-router-dom": "^6.14.1",
+    "next": "^13.4.7",
     "stripe": "^8.67.0"
   },
   "bugs": {
