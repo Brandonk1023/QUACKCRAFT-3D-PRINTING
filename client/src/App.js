@@ -15,22 +15,12 @@ import Cover from './components/userProfile/Cover'
 import Main from './components/userProfile/Main'
 
 
-
-
-// import navbar from "./components/navbar/Navbar";
-// import footer from "./components/footer/Footer";
-// import logout from "./components/logout/Logout";
-// import sideBar from "./components/sideBar/SideBar";
-// import pageList from "./components/pageList/PageList"
-
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
 
   const toggleForm = (formName) => {
     setCurrentForm(formName);
   }
-
-
 
   return (
     <div className="App">
@@ -39,7 +29,7 @@ function App() {
       } */}
       {/* <Login /> */}
 
-      <SimpleBar style={{ maxHeight: '100vh' }}>
+      <SimpleBar style={{ maxHeight: '100vh'}}>
         <ChakraProvider theme={theme}>
           <Router>
             <Navbar />
@@ -65,39 +55,6 @@ function App() {
   );
 }
 
-// added this for userProfile page... not sure if we need this OR even if this is right :/ delete if needed 
-// function userProfile() {
-
-//   return (
-//     <SimpleBar style={{ maxHeight: '100vh' }}>
-//       <ChakraProvider theme={theme}>
-//         <Router>
-//           <Switch>
-//             <Route path="/" exact>
-//               <Cover />
-//               <Main />
-//             </Route>
-//           </Switch>
-//         </Router>
-//       </ChakraProvider>
-//     </SimpleBar>
-//   )
-// }
-// code ends
-
-{/* <SimpleBar style={{ maxHeight: '100vh' }}>
-<ChakraProvider theme={theme}>
-  <Router>
-    <Switch>
-      <Route exact path="/" component={Login}/>
-      <Route exact path="/" component={Register}/>
-      <Route exact path="/" component={Cover}/>
-      <Route exact path="/" component={Main}/>
-      </Route>
-    </Switch>
-  </Router>
-</ChakraProvider>
-</SimpleBar> */}
 
 export default App;
 

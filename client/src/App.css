@@ -82,7 +82,50 @@ button {
   margin-top: 10px;
 }
 
+.navbar {
+  background-color:#dddfd4;
+  color:#173e43;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 6rem;
+  padding: 0 1rem;
+}
 
+.brandlogo {
+  font-family: cursive;
+  font-size: 1.7rem;
+}
+
+.nav-links {
+  font-size: ;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 0.7rem;
+  font-size: 14px;
+  height: 3rem;
+}
+
+.navbar a {
+  color: inherit;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .15rem;
+}
+
+.navbar li.active {
+  background-color: #dddfd4;
+}
+
+.navbar li:hover {
+  background-color: #fae596;
+}
 
 
 
