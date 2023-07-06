@@ -26,9 +26,11 @@ import Main from './components/userProfile/Main'
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
 
-  const toggleForm = (formFirstname) => {
-    setCurrentForm(formFirstname);
+  const toggleForm = (formName) => {
+    setCurrentForm(formName);
   }
+
+
 
   return (
     <div className="App">
@@ -42,7 +44,7 @@ function App() {
           <Router>
             <Navbar />
             <Switch>
-              <Route path= "/login">
+              <Route path= "/">
                 <Login />
               </Route>
               <Route path= "/register">
@@ -50,7 +52,7 @@ function App() {
               </Route>
               <Route path= "/cover">
               </Route>
-              <Route path= "/">
+              <Route path= "/main">
                 <Cover />
                 <Main />
               </Route>

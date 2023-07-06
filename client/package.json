@@ -1,5 +1,5 @@
 {
-  "name": "zero-ducks-given",
+  "name": "quackcraft-3d-printing",
   "version": "0.1.0",
   "private": true,
   "prettier": {
@@ -9,6 +9,7 @@
     "useTabs": false
   },
   "dependencies": {
+    "@apollo/client": "^3.5.8",
     "@chakra-ui/react": "^1.5.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -19,6 +20,8 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^13.5.0",
+    "graphql": "^15.4.0",
+    "jwt-decode": "^3.1.2",
     "framer-motion": "^4",
     "node-sass": "^9.0.0",
     "react": "^17.0.2",

@@ -19,7 +19,7 @@ function AccountSettings() {
                 <Input 
                     focusBorderControl="brand.blue" 
                     type="username" 
-                    placeholder="what should we call you?" 
+                    placeholder="Zer0ducksgiven" 
                     />
             </FormControl>
             <FormControl id="emailAddress">
@@ -36,7 +36,7 @@ function AccountSettings() {
                 <Input 
                     focusBorderControl="brand.blue" 
                     type="city" 
-                    placeholder="what's your city?" 
+                    placeholder="rep your city!" 
                     />
             </FormControl>
             {/* <FormControl id="city">
