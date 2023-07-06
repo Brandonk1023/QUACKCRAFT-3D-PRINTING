@@ -24,15 +24,21 @@ function App() {
     <Router>
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<home />}/>
-        <Route path="/login" element={<login />}/>
-      </Routesoutes>
+        <Route exact path="/" Component={<home />}/>
+        <Route path="/login" Component={<login />}/>
+        <Route path="/logout" Component={logout />}/>
+        <Route path="/profile" Component={<profile />}/>
+        <Route path="/tutorials" Component={<tutorials />}/>
+        <Route path="/filaments" Component={<filaments/>}/>
+        <Route path="/downloadables" Component={<downloadables />}/>
+        <Route path="/store" Component={<store />}/>
+      </Routes>
       {
         currentForm === "Login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
       }
      {/* <Login /> */}
     </div>
-    <Router/>
+    </Router>
   );
 }
 
