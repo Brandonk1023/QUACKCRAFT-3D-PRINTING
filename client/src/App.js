@@ -39,30 +39,27 @@ function App() {
       } */}
       {/* <Login /> */}
 
-      <SimpleBar style={{ maxHeight: '100vh' }}>
-        <ChakraProvider theme={theme}>
-          <Router>
-            <Navbar />
-            <Switch>
-              <Route path="/">
-                <Login />
-              </Route>
-              <Route path="/register">
-                <Register />
-              </Route>
-              <Route path="/cover"></Route>
-              <Route path="/main">
-                <Cover />
-                <Main />
-              </Route>
-            </Switch>
-          </Router>
-        </ChakraProvider>
-      </SimpleBar>
+    <SimpleBar style={{ maxHeight: '100vh' }}>
+      <ChakraProvider theme={theme}>
+        <Router>
+          <Navbar>
+            <Routes>
+              <Route exact path="/" Component={<home />}/>
+              <Route path="/login" Component={<login />}/>
+              <Route path="/logout" Component={<logout />}/>
+              <Route path="/profile" Component={<profile />}/>
+              <Route path="/tutorials" Component={<tutorials />}/>
+              <Route path="/filaments" Component={<filaments/>}/>
+              <Route path="/downloadables" Component={<downloadables />}/>
+              <Route path="/store" Component={<store />}/>
+              <Route path="/register"/>
+              <Route path="/cover"/>
+              <Route path="/main"/>
+            </Routes>
+          </Navbar>
+       </Router>
+      </ChakraProvider>
+    </SimpleBar>
     </div>
-
-  )
-
-}
 
 export default App
