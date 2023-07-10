@@ -49,10 +49,10 @@ const client = new ApolloClient({
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
   // RAIYA and ETHAN -- need to review where `currentForm` is used
-  const toggleForm = formName => {
+/*   const toggleForm = formName => {
     setCurrentForm(formName)
   }
-
+ */
   return (
     <ApolloProvider client={client}>
       <div className="App">
@@ -63,14 +63,16 @@ function App() {
             <Router>
               <Navbar>
                 <Routes>
-                  <Route exact path="/" Component={<home />} />
-                  <Route path="/login" Component={<login />} />
-                  <Route path="/logout" Component={<logout />} />
-                  <Route path="/profile" Component={<profile />} />
-                  <Route path="/tutorials" Component={<tutorials />} />
-                  <Route path="/filaments" Component={<filaments />} />
+                  <Route exact path="/" component={<home />} />
+                  <Route path="/contact" component={<contact />} />
+                  <Route path="/about" component={<about />} />
+                  <Route path="/login" component={<login />} />
+                  <Route path="/logout" component={<logout />} />
+                  <Route path="/profile" component={<profile />} />
+                  <Route path="/tutorials" component={<tutorials />} />
+                  <Route path="/filaments" component={<filaments />} />
                   <Route path="/downloadables" Component={<downloadables />} />
-                  <Route path="/store" Component={<store />} />
+                  <Route path="/donate" Component={<donations />} />
                   <Route path="/register" />
                   <Route path="/cover" />
                   <Route path="/main" />
