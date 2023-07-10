@@ -78,10 +78,10 @@ function App() {
                   <Route path="/tutorials" component={<tutorials />} />
                   <Route path="/filaments" component={<filaments />} />
                   <Route path="/downloadables" Component={<downloadables />} />
-                  <Route path="/donate" Component={<donations />} />
+                  <Route path="/donate" component={<donations />} />
                   <Route path="/register" />
                   <Route path="/cover" />
-                  <Route path="/main" /> */}
+                  <Route path="/main" />
                   
                 </Routes>
               </Navbar>
