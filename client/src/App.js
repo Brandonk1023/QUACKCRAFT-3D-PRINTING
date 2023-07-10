@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import logo from './logo.svg';
 import './App.css'
 import Navbar from './components/navbar/navbar'
-import Login from './components/login/Login'
+import Login from './components/login/login'
 import DonationForm from './components/donation/donationForm'
 // import HelpUs from './components/donation'
 // import HelpUsTitle from '/components/donation/HelpUs/HelpUsTitle'
@@ -61,14 +61,13 @@ function App() {
 
       <div className="App">
         {currentForm === "Login" ? <Login onFormSwitch={toggleForm} /> : ' '}
-        {/* <Register onFormSwitch={toggleForm} /> */}
+        <Register onFormSwitch={toggleForm} />
         <DonationForm />
         <SimpleBar style={{ maxHeight: '100vh' }}>
           <ChakraProvider theme={theme}>
             <Router>
               <Navbar>
                 <Routes>
-
                   <Route exact path="/" component={<home />} />
                   <Route path="/contact" component={<contact />} />
                   <Route path="/about" component={<about />} />
@@ -77,12 +76,11 @@ function App() {
                   <Route path="/profile" component={<profile />} />
                   <Route path="/tutorials" component={<tutorials />} />
                   <Route path="/filaments" component={<filaments />} />
-                  <Route path="/downloadables" Component={<downloadables />} />
+                  <Route path="/downloadables" component={<downloadables />} />
                   <Route path="/donate" component={<donations />} />
                   <Route path="/register" />
                   <Route path="/cover" />
                   <Route path="/main" />
-                  
                 </Routes>
               </Navbar>
             </Router>
