@@ -20,6 +20,7 @@ db.once('open', async () => {
 
     await Downloadables.deleteMany({});
     await Downloadables.create(DownloadablesSeeds);
+    console.log('Downloadables seeded!');
 
     process.exit(0);
   } catch (err) {

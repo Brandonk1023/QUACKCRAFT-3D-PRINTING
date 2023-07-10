@@ -1,7 +1,7 @@
 // import gql function from apollo server express so we can utilize template literal to wrap GraphQL strings
 const { gql } = require('apollo-server-express');
 
-// NEED TODO: Add PrintableFile typeDef and add related Queries and Mutations
+// NEED TODO: Add Downloadables typeDef and add related Queries and Mutations
 const typeDefs = gql`
   type User {
     _id: ID!
@@ -21,9 +21,11 @@ const typeDefs = gql`
     downVote: Int
   }
 
-  # type PrintableFile {
-
-  # }
+  type Downloadables {
+    Title: String
+    Content: String
+    DownloadURL: String
+  }
 
   type Auth {
     token: ID!
