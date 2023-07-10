@@ -1,13 +1,5 @@
 // import mongoose
 
-/*
-WHERE IS THIS DATA COMING FROM?
-API CALL?
-OUR OWN SEEDED SERVER?
-
-need to think more
-
-*/
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
