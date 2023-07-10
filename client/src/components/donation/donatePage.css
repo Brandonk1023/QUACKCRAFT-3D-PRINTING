@@ -1,0 +1,35 @@
+/* .donatePage {
+    padding: 2rem;
+    background: var(--medium-blue);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 499px) {
+    .donatePage {
+      height: 100vh;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .donatePage {
+      max-width: 35rem;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .donatePage {
+      max-height: 45rem;
+      max-width: 61rem;
+      border-radius: 1rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .donatePage {
+      max-width: 70rem;
+    }
+  } */
