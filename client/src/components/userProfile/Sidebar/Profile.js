@@ -49,7 +49,7 @@ function Profile() {
                 name=''
                 cursor="pointer"
                 onClick={openChooseImage}
-                src={userProfile ? userProfile : 'assets/img/Duck.jpg'}
+                src={userProfile ? userProfile : 'assets/img/DaffyDuck.jpg'}
             >
                 <AvatarBadge bg="brand.yellow" boxSize={"1em"}>
                     <svg width="0.4em" fill="currentColor" viewBox="0 0 20 20">

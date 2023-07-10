@@ -97,10 +97,6 @@ button {
   font-size: 1.7rem;
 }
 
-.nav-links {
-  font-size: ;
-}
-
 nav ul {
   padding: 0;
   margin: 0;
@@ -116,7 +112,7 @@ nav ul {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: .15rem;
+  padding: .17rem;
 }
 
 .navbar li.active {
@@ -127,39 +123,39 @@ nav ul {
   background-color: #fae596;
 }
 
-
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ {/*styling for donation page media queries*/}
+.donatePage {
+  padding: 2rem;
+  background: var(--medium-blue);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 499px) {
+  .donatePage {
+    height: 100vh;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 576px) {
+  .donatePage {
+    max-width: 35rem;
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 992px) {
+  .donatePage {
+    max-height: 45rem;
+    max-width: 61rem;
+    border-radius: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
   }
-} */
+}
+
+@media (min-width: 1200px) {
+  .donatePage {
+    max-width: 70rem;
+  }
+}

@@ -13,6 +13,12 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { theme } from './components/userProfile/helpers/index'
 import Cover from './components/userProfile/Cover'
 import Main from './components/userProfile/Main'
+// imports for donation page
+import DonationForm from './components/donation';
+import HelpUs from './components/donation/helpUs';
+// import classes from './App.module.css'; // come back to this
+
+
 
 
 function App() {
@@ -34,7 +40,7 @@ function App() {
           <Router>
             <Navbar />
             <Switch>
-              <Route path= "/">
+              <Route path= "/login">
                 <Login />
               </Route>
               <Route path= "/register">
@@ -42,7 +48,7 @@ function App() {
               </Route>
               <Route path= "/cover">
               </Route>
-              <Route path= "/main">
+              <Route path= "/">
                 <Cover />
                 <Main />
               </Route>
@@ -50,9 +56,17 @@ function App() {
           </Router>
         </ChakraProvider>
       </SimpleBar>
-
     </div>
   );
+
+  function donatePage() {
+  return (
+    <main className={classes.donatePage}>
+      <HelpUs />
+      <DonationForm />
+    </main>
+  );
+  }
 }
 
 
