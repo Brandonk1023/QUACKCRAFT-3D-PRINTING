@@ -74,6 +74,7 @@ function App() {
                   <Route path="/register" />
                   <Route path="/cover" />
                   <Route path="/main" />
+                  
                 </Routes>
               </Navbar>
             </Router>
