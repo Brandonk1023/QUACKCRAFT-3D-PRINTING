@@ -49,10 +49,10 @@ const client = new ApolloClient({
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
   // RAIYA and ETHAN -- need to review where `currentForm` is used
-/*   const toggleForm = formName => {
+  const toggleForm = formName => {
     setCurrentForm(formName)
   }
- */
+
   return (
     <ApolloProvider client={client}>
       <div className="App">
