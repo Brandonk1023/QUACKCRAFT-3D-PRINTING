@@ -123,7 +123,7 @@ nav ul {
   background-color: #fae596;
 }
 
- {/*styling for donation page media queries*/}
+ /*styling for donation page media queries*/
 .donatePage {
   padding: 2rem;
   background: var(--medium-blue);
