@@ -1,11 +1,12 @@
-import classes from './HelpUs.css';
-import HelpUsTitle from './HelpUsTitle';
+import './HelpUs.css';
 
 const HelpUs = () => {
   return (
-    <section className={classes.HelpUs}>
-      <HelpUsTitle />
-      <p className={classes.HelpUsParagraph}>
+    <section className='HelpUs'>
+      <header className='HelpUsTitle'>
+    <h1>Help us do more</h1>
+  </header>
+      <p className='HelpUsParagraph'>
         TEXT HERE ABOUT DONATING
       </p>
     </section>

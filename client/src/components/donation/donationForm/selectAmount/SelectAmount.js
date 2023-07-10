@@ -1,42 +1,46 @@
-import classes from './SelectAmount.css';
+import './SelectAmount.css';
 
 const SelectAmount = () => {
   return (
-    <div className={classes.SelectAmount}>
-      <header className={classes.Title}>
-        <h4>Selct amount (in US dollar)</h4>
+    <div className='SelectAmount'>
+      <header className='Title'>
+        <h4>Select Amount (in US dollars)</h4>
       </header>
-      <fieldset className={classes.Amounts}>
-        <div className={classes.RadioWrapper}>
+      <fieldset className='Amounts'>
+        {/* <div className='RadioWrapper'>
           <input
             defaultChecked
-            className={classes.Radio}
+            className='Radio'
             type='radio'
             name='amount'
             id='20'
           />
           <label htmlFor='20'>$20</label>
+        </div> */}
+        <div className='RadioWrapper'>
+          <input className='Radio' type='radio' name='amount' id='50' />
+          <label htmlFor='20'>$20</label>
         </div>
-        <div className={classes.RadioWrapper}>
-          <input className={classes.Radio} type='radio' name='amount' id='50' />
+        <div className='RadioWrapper'>
+          <input className='Radio' type='radio' name='amount' id='50' />
           <label htmlFor='50'>$50</label>
         </div>
-        <div className={classes.RadioWrapper}>
-          <input className={classes.Radio} type='radio' name='amount' id='75' />
+        <div className='RadioWrapper'>
+          <input className='Radio' type='radio' name='amount' id='75' />
           <label htmlFor='75'>$75</label>
         </div>
-        <div className={classes.RadioWrapper}>
-          <input className={classes.Radio} type='radio' name='amount' id='100' />
+        <div className='RadioWrapper'>
+          <input className='Radio' type='radio' name='amount' id='100' />
           <label htmlFor='100'>$100</label>
         </div>
-        <div className={classes.RadioWrapper}>
+        <div className='RadioWrapper'>
           <input
-            className={classes.Radio}
+            className='Radio'
             type='radio'
             name='amount'
             id='other'
           />
-          <label htmlFor='other'>other</label>
+          <label htmlFor='other'>Other</label>
         </div>
       </fieldset>
     </div>
