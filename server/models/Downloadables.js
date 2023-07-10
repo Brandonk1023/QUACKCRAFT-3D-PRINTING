@@ -21,4 +21,4 @@ const downloadablesSchema = new Schema({
     },
 })
 
-module.exports = Downloables
+module.exports = Downloadables
