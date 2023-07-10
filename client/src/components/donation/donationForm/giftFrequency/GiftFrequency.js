@@ -1,15 +1,15 @@
-import classes from './GiftFrequency.css';
+import './GiftFrequency.css';
 
 const GiftFrequency = () => {
   return (
-    <div className={classes.GiftFrequency}>
-      <header className={classes.Title}>
-        <h4>Gift frequency</h4>
+    <div className='GiftFrequency'>
+      <header className='Title'>
+        <h4>Select Gift frequency</h4>
       </header>
-      <fieldset className={classes.Frequency}>
-        <div className={classes.RadioWrapper}>
+      <fieldset className='Frequency'>
+        <div className='RadioWrapper'>
           <input
-            className={classes.Radio}
+            className='Radio'
             id='monthly'
             type='radio'
             name='Frequency'
@@ -17,9 +17,9 @@ const GiftFrequency = () => {
           />
           <label htmlFor='monthly'>Monthly</label>
         </div>
-        <div className={classes.RadioWrapper}>
+        <div className='RadioWrapper'>
           <input
-            className={classes.Radio}
+            className='Radio'
             type='radio'
             id='one-time'
             name='Frequency'

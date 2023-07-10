@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   display:flex;
+  flex-direction: column;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -159,3 +160,4 @@ nav ul {
     max-width: 70rem;
   }
 }
+

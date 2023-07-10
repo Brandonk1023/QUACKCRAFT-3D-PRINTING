@@ -1,7 +1,7 @@
-import classes from './SubmitButton.css';
+import './SubmitButton.css';
 
 const SubmitButton = () => (
-  <button className={classes.DonateButton}>Donate now</button>
+  <button className='DonateButton'>Donate now</button>
 );
 
 export default SubmitButton;
