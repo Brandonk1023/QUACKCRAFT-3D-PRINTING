@@ -1,5 +1,5 @@
 const User = require('./User.js');
 const Filament = require('./Filament.js');
-const PrintableFile = require('./PrintableFile.js');
+const Downloadables = require('./Downloadables.js');
 
-module.exports = { User, Filament, PrintableFile };
+module.exports = { User, Filament, Downloadables };

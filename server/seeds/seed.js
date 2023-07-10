@@ -1,11 +1,12 @@
 const db = require('../config/connection');
-const { User, Filament, PrintableFile } = require('../models');
+const { User, Filament, Downloadables } = require('../models');
 
 // In some class activities the seed.js file is inside the config folder.
 // The original one I deleted by mistake was in the seeds folder, so...
 
 const userSeeds = require('./userSeeds');
 const filamentSeeds = require('./filamentSeeds');
+const DownloadablesSeeds = require('./DownloadablesSeeds');
 
 db.once('open', async () => {
   try {
@@ -16,6 +17,10 @@ db.once('open', async () => {
     await Filament.deleteMany({});
     await Filament.create(filamentSeeds);
     console.log('Filaments seeded!');
+
+    await Downloadables.deleteMany({});
+    await Downloadables.create(DownloadablesSeeds);
+    console.log('Downloadables seeded!');
 
     process.exit(0);
   } catch (err) {

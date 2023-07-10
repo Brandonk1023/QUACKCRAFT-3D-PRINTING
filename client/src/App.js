@@ -68,16 +68,18 @@ function App() {
             <Router>
               <Navbar>
                 <Routes>
-                  {/* <Route exact path="/p" element={<home />} /> */}
-                  <Route path="/login" element={<Login />} />
-                  {/* <Route path="/logout" element={<logout />} /> */}
-                  {/* <Route path="/profile" element={<profile />} /> */}
-                  {/* <Route path="/tutorials" element={<tutorials />} /> */}
-                  {/* <Route path="/filaments" element={<filaments />} /> */}
-                  {/* <Route path="/downloadables" element={<downloadables />} /> */}
-                  {/* <Route path="/HelpUs" element={<HelpUs />} /> */}
-                  <Route path="/" element={<DonationForm />} />
-                  {/* <Route path="/register" />
+
+                  <Route exact path="/" component={<home />} />
+                  <Route path="/contact" component={<contact />} />
+                  <Route path="/about" component={<about />} />
+                  <Route path="/login" component={<login />} />
+                  <Route path="/logout" component={<logout />} />
+                  <Route path="/profile" component={<profile />} />
+                  <Route path="/tutorials" component={<tutorials />} />
+                  <Route path="/filaments" component={<filaments />} />
+                  <Route path="/downloadables" Component={<downloadables />} />
+                  <Route path="/donate" Component={<donations />} />
+                  <Route path="/register" />
                   <Route path="/cover" />
                   <Route path="/main" /> */}
                   
