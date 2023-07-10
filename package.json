@@ -1,5 +1,5 @@
 {
-  "name": "quackcraft-3D-printing",
+  "name": "quackcraft-3d-printing",
   "version": "1.0.0",
   "description": "Project 3",
   "main": "server/server.js",
