@@ -14,13 +14,11 @@ REVIEW CLASS ACTIVITY FOR MORE GUIDANCE
 const resolvers = {
   // The Query type has resolvers for FINDING, READING, ETC.
   Query: {
-    users: async () => {
-      return User.find();
-    },
+
 
     user: async (parent, { userId }) => {
       const params = userId ? { _id: userId } : {};
-      return User.findOne(params);
+      return User.find(params);
     },
     // FROM CLASS EXAMPLE: By adding context to our query, we can retrieve the logged in user without specifically searching for them
     me: async (parent, args, context) => {
@@ -30,7 +28,7 @@ const resolvers = {
       throw new AuthenticationError('You need to be logged in!');
     },
   },
-  // The Mutation type has resolvers for ADDING, UPDATING, ETC.
+  // The Mutation type has resolvers for LOGIN, ADDING, UPDATING, ETC.
   Mutation: {
     addUser: async (parent, { name, email, password }) => {
       const user = await User.create({ name, email, password });
