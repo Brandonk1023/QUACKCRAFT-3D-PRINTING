@@ -11,7 +11,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import logo from './logo.svg';
 import './App.css'
 import Navbar from './components/navbar/navbar'
-import { Login } from './components/login/login'
+import Login from './components/login/Login'
+import DonationForm from './components/donation/donationForm'
+// import HelpUs from './components/donation'
+// import HelpUsTitle from '/components/donation/HelpUs/HelpUsTitle'
 import { Register } from './components/register/Register'
 // imports for userProfile
 // import { AccountSettings } from "./components/userProfile/AccountSettings";
@@ -55,25 +58,28 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
+
       <div className="App">
-        currentForm === "Login" ? <Login onFormSwitch={toggleForm} /> :{' '}
-        <Register onFormSwitch={toggleForm} />
+        {currentForm === "Login" ? <Login onFormSwitch={toggleForm} /> : ' '}
+        {/* <Register onFormSwitch={toggleForm} /> */}
+        <DonationForm />
         <SimpleBar style={{ maxHeight: '100vh' }}>
           <ChakraProvider theme={theme}>
             <Router>
               <Navbar>
                 <Routes>
-                  <Route exact path="/" Component={<home />} />
-                  <Route path="/login" Component={<login />} />
-                  <Route path="/logout" Component={<logout />} />
-                  <Route path="/profile" Component={<profile />} />
-                  <Route path="/tutorials" Component={<tutorials />} />
-                  <Route path="/filaments" Component={<filaments />} />
-                  <Route path="/downloadables" Component={<downloadables />} />
-                  <Route path="/store" Component={<store />} />
-                  <Route path="/register" />
+                  {/* <Route exact path="/p" element={<home />} /> */}
+                  <Route path="/login" element={<Login />} />
+                  {/* <Route path="/logout" element={<logout />} /> */}
+                  {/* <Route path="/profile" element={<profile />} /> */}
+                  {/* <Route path="/tutorials" element={<tutorials />} /> */}
+                  {/* <Route path="/filaments" element={<filaments />} /> */}
+                  {/* <Route path="/downloadables" element={<downloadables />} /> */}
+                  {/* <Route path="/HelpUs" element={<HelpUs />} /> */}
+                  <Route path="/" element={<DonationForm />} />
+                  {/* <Route path="/register" />
                   <Route path="/cover" />
-                  <Route path="/main" />
+                  <Route path="/main" /> */}
                   
                 </Routes>
               </Navbar>
