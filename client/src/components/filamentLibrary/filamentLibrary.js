@@ -2,8 +2,8 @@ import React from 'react';
 
 const FilamentLibrary = () => {
     return (
-        <div className='App'>
-            <h1>Testing</h1>
+        <div>
+            <h2>Filament Information</h2>
 
         </div>
     )
