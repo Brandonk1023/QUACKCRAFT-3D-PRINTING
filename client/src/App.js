@@ -62,7 +62,6 @@ function App() {
       <div className="App">
         {currentForm === "Login" ? <Login onFormSwitch={toggleForm} /> : ' '}
         <Register onFormSwitch={toggleForm} />
-        <DonationForm />
         <SimpleBar style={{ maxHeight: '100vh' }}>
           <ChakraProvider theme={theme}>
             <Router>
@@ -79,8 +78,8 @@ function App() {
                   <Route path="/downloadables" component={<downloadables />} />
                   <Route path="/donate" component={<donations />} />
                   <Route path="/register" />
-                  <Route path="/cover" />
-                  <Route path="/main" />
+                  <cover />
+                  <main />
                 </Routes>
               </Navbar>
             </Router>
