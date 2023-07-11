@@ -2,6 +2,7 @@
   text-align: center;
   display:flex;
   flex-direction: column;
+  width: 100vw;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -83,7 +84,11 @@ button {
   margin-top: 10px;
 }
 
+/* Navbar styling */
 .navbar {
+  position: absolute;
+  top: 0;
+  width: 100vw;
   background-color:#dddfd4;
   color:#173e43;
   display: flex;
