@@ -2,7 +2,7 @@ import React from 'react';
 
 const Downloadables = () => {
     return (
-        <div className='App'>
+        <div>
             <h2>Downloadables</h2>
             <section>
                 <div>
