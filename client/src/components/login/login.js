@@ -57,8 +57,7 @@ export default function Login(props) {
         />
         <button className="hover">Log in!</button>
       </form>
-      <button>
-        className="link-btn"
+      <button className="link-btn">
         <Link to="/register">Need an account? Register here!</Link>
       </button>
     </div>

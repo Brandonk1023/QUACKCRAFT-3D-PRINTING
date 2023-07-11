@@ -61,8 +61,8 @@ const App = () => {
     <ApolloProvider client={client}>
 
       <div className="App">
-        <SimpleBar style={{ maxHeight: '100vh' }}>
-          <ChakraProvider theme={theme}>
+        {/* <SimpleBar style={{ maxHeight: '100vh' }}> */}
+          {/* <ChakraProvider theme={theme}> */}
             <Router>
               <Navbar/>
                 <Routes>
@@ -79,8 +79,8 @@ const App = () => {
                   <Route path="/register" element={<Register />} />
                 </Routes>
             </Router>
-          </ChakraProvider>
-        </SimpleBar>
+          {/* </ChakraProvider>
+        </SimpleBar> */}
       </div>
     </ApolloProvider>
   )

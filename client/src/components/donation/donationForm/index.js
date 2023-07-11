@@ -12,7 +12,7 @@ const DonationForm = () => {
       <div className='help-us-style'>
       <HelpUs />
       </div>
-      <div>
+      <div className='donate-now-style'>
       <GiftFrequency />
       <SelectAmount />
       <Agreement />

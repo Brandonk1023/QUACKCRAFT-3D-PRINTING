@@ -20,12 +20,14 @@
   }
   
   .HelpUsParagraph {
+    display: flex;
     font-weight: 600;
     line-height: 1.7rem;
     text-align: justify;
+    
   }
   
-  @media (min-width: 992px) {
+  /* @media (min-width: 992px) {
     .HelpUs {
       max-width: 45%;
     }
@@ -38,4 +40,4 @@
     .HelpUs {
       max-width: 50%;
     }
-  }
+  } */
