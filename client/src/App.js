@@ -11,7 +11,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import logo from './logo.svg';
 import './App.css'
 import Navbar from './components/navbar/navbar'
-import login from './components/login/login'
 import DonationForm from './components/donation/donationForm'
 // import HelpUs from './components/donation'
 // import HelpUsTitle from '/components/donation/HelpUs/HelpUsTitle'
@@ -58,17 +57,10 @@ const client = new ApolloClient({
 const App = () => {
   const [currentForm, setCurrentForm] = useState('login')
 
-  // RAIYA and ETHAN -- need to review where `currentForm` is used
-/*   const toggleForm = formName => {
-    setCurrentForm(formName)
-  }
- */
   return (
     <ApolloProvider client={client}>
 
       <div className="App">
-{/*         {currentForm === "Login" ? <Login onFormSwitch={toggleForm} /> : ' '} */}
-{/*         <Register onFormSwitch={toggleForm} /> */}
         <SimpleBar style={{ maxHeight: '100vh' }}>
           <ChakraProvider theme={theme}>
             <Router>
