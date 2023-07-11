@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import logo from './logo.svg';
 import './App.css'
 import Navbar from './components/navbar/navbar'
-import Login from './components/login/login'
+import login from './components/login/login'
 import DonationForm from './components/donation/donationForm'
 // import HelpUs from './components/donation'
 // import HelpUsTitle from '/components/donation/HelpUs/HelpUsTitle'
@@ -23,6 +23,8 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { theme } from './components/userProfile/helpers/index'
 import Cover from './components/userProfile/Cover';
 import  UserProfile   from './components/userProfile';
+import ContactUs from './components/ContactUs/ContactUs';
+import AboutUs from './components/AboutUs/AboutUs';
 // RAIYA and ETHAN -- need to review where the above imports for logo, AccountSetting, Cover, Main are be used
 
 // Construct our main GraphQL API endpoint
@@ -52,10 +54,10 @@ const client = new ApolloClient({
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
   // RAIYA and ETHAN -- need to review where `currentForm` is used
-  const toggleForm = formName => {
+/*   const toggleForm = formName => {
     setCurrentForm(formName)
   }
-
+ */
   return (
     <ApolloProvider client={client}>
 
@@ -67,21 +69,17 @@ function App() {
             <Router>
               <Navbar/>
                 <Routes>
-                  <Route exact path="/" element={<home />} />
-                  <Route path="/contact" element={<contact />} />
-                  <Route path="/about" element={<about />} />
-                  <Route path="/login" element={<login />} />
+                  <Route exact path="/" element={<login />} />
+                  <Route path="/contact" element={<ContactUs />} />
+                  <Route path="/about" element={<AboutUs />} />
+                  {/* <Route path="/login" element={<login />} /> */}
                   <Route path="/userProfile" element={<UserProfile />} />
-                 {/*  <Route path="/logout" element={<logout />} />
-                  <Route path="/userProfile" element={<userProfile />} />
-                  <Route path="/profile" element={<userProfile />} />
+                  <Route path="/logout" element={<logout />} />
                   <Route path="/tutorials" element={<tutorials />} />
                   <Route path="/filaments" element={<filaments />} />
                   <Route path="/downloadables" element={<downloadables />} />
-                  <Route path="/donate" element={<donations />} />
-                  <Route path="/register" /> */}
-{/*                   <cover />
-                  <main /> */}
+                  <Route path="/donate" element={<DonationForm />} />
+                  <Route path="/register" />
                 </Routes>
             </Router>
           </ChakraProvider>
