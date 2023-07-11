@@ -21,8 +21,8 @@ import { Register } from './components/register/Register'
 import SimpleBar from 'simplebar-react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { theme } from './components/userProfile/helpers/index'
-// import Cover from './components/userProfile/Cover';
-// import Main from './components/userProfile/Main';
+import Cover from './components/userProfile/Cover';
+import  UserProfile   from './components/userProfile';
 // RAIYA and ETHAN -- need to review where the above imports for logo, AccountSetting, Cover, Main are be used
 
 // Construct our main GraphQL API endpoint
@@ -60,28 +60,29 @@ function App() {
     <ApolloProvider client={client}>
 
       <div className="App">
-        {currentForm === "Login" ? <Login onFormSwitch={toggleForm} /> : ' '}
-        <Register onFormSwitch={toggleForm} />
+{/*         {currentForm === "Login" ? <Login onFormSwitch={toggleForm} /> : ' '} */}
+{/*         <Register onFormSwitch={toggleForm} /> */}
         <SimpleBar style={{ maxHeight: '100vh' }}>
           <ChakraProvider theme={theme}>
             <Router>
-              <Navbar>
+              <Navbar/>
                 <Routes>
-                  <Route exact path="/" component={<home />} />
-                  <Route path="/contact" component={<contact />} />
-                  <Route path="/about" component={<about />} />
-                  <Route path="/login" component={<login />} />
-                  <Route path="/logout" component={<logout />} />
-                  <Route path="/profile" component={<profile />} />
-                  <Route path="/tutorials" component={<tutorials />} />
-                  <Route path="/filaments" component={<filaments />} />
-                  <Route path="/downloadables" component={<downloadables />} />
-                  <Route path="/donate" component={<donations />} />
-                  <Route path="/register" />
-                  <cover />
-                  <main />
+                  <Route exact path="/" element={<home />} />
+                  <Route path="/contact" element={<contact />} />
+                  <Route path="/about" element={<about />} />
+                  <Route path="/login" element={<login />} />
+                  <Route path="/userProfile" element={<UserProfile />} />
+                 {/*  <Route path="/logout" element={<logout />} />
+                  <Route path="/userProfile" element={<userProfile />} />
+                  <Route path="/profile" element={<userProfile />} />
+                  <Route path="/tutorials" element={<tutorials />} />
+                  <Route path="/filaments" element={<filaments />} />
+                  <Route path="/downloadables" element={<downloadables />} />
+                  <Route path="/donate" element={<donations />} />
+                  <Route path="/register" /> */}
+{/*                   <cover />
+                  <main /> */}
                 </Routes>
-              </Navbar>
             </Router>
           </ChakraProvider>
         </SimpleBar>
