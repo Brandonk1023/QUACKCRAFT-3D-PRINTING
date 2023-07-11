@@ -1,8 +1,8 @@
 import { Container } from '@chakra-ui/react'
 import Content from './Content'
-import Sidebar from '../userProfile/Sidebar/Sidebar'
+import Sidebar from './Sidebar/Sidebar'
 
-export default function Main() {
+export default function UserProfile() {
     return (
         <Container display={{ base: 'block', md: 'flex' }} maxW="container.xl">
             <Sidebar />
