@@ -10,35 +10,39 @@ export const QUERY_FILAMENT = gql`
       PrintSpeed
     }
   }
-`;
+`
 
 export const QUERY_DOWNLOADABLES = gql`
   query downloadables {
     downloadables {
-        _id
-        title
-        content
-        downloadURL
+      _id
+      title
+      content
+      downloadURL
     }
   }
-`;
+`
 
-// export const QUERY_PROFILES = gql`
-//   query allProfiles {
-//     profiles {
-//       _id
-//       name
-//       skills
-//     }
-//   }
-// `;
+export const QUERY_USER = gql`
+  query allUsers {
+    users {
+      _id
+      userName
+      firstName
+      lastName
+      email
+    }
+  }
+`
 
-// export const QUERY_SINGLE_PROFILE = gql`
-//   query singleProfile($profileId: ID!) {
-//     profile(profileId: $profileId) {
-//       _id
-//       name
-//       skills
-//     }
-//   }
-// `;
+export const QUERY_SINGLE_USER = gql`
+  query singleUser($userId: ID!) {
+    user(userId: $userId) {
+      _id
+      userName
+      firstName
+      lastName
+      email
+    }
+  }
+`
