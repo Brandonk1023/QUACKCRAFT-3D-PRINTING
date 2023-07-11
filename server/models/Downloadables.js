@@ -5,17 +5,17 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const downloadablesSchema = new Schema({
-  Title: {
+  title: {
     type: String,
     required: true,
     trim: true,
   },
-  Content: {
+  content: {
     type: String,
     required: true,
     trim: true,
   },
-  DownloadURL: {
+  downloadURL: {
     type: String,
     required: true,
   },
