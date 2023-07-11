@@ -25,6 +25,8 @@ import Cover from './components/userProfile/Cover';
 import  UserProfile   from './components/userProfile';
 import ContactUs from './components/ContactUs/ContactUs';
 import AboutUs from './components/AboutUs/AboutUs';
+import Login from './components/login/login';
+import Downloadables from './components/downloadables/downloadables';
 // RAIYA and ETHAN -- need to review where the above imports for logo, AccountSetting, Cover, Main are be used
 
 // Construct our main GraphQL API endpoint
@@ -69,7 +71,7 @@ function App() {
             <Router>
               <Navbar/>
                 <Routes>
-                  <Route exact path="/" element={<login />} />
+                  <Route exact path="/" element={<Login />} />
                   <Route path="/contact" element={<ContactUs />} />
                   <Route path="/about" element={<AboutUs />} />
                   {/* <Route path="/login" element={<login />} /> */}
@@ -77,7 +79,7 @@ function App() {
                   <Route path="/logout" element={<logout />} />
                   <Route path="/tutorials" element={<tutorials />} />
                   <Route path="/filaments" element={<filaments />} />
-                  <Route path="/downloadables" element={<downloadables />} />
+                  <Route path="/downloadables" element={<Downloadables />} />
                   <Route path="/donate" element={<DonationForm />} />
                   <Route path="/register" />
                 </Routes>

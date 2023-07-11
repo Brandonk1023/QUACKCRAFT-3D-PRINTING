@@ -3,7 +3,12 @@ import React from 'react';
 const Downloadables = () => {
     return (
         <div className='App'>
-            <h1>Testing</h1>
+            <h2>Downloadables</h2>
+            <section>
+                <div>
+                    <p>Please browse our downloadables below!</p>
+                </div>
+            </section>
 
         </div>
     )
