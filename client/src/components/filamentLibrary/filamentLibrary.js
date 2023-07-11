@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FilamentData from './FilamentData'
-import Filament1 from "../../assets/filamentImages/Filament1"
-import Filament2 from "../../assets/filamentImages/Filament2"
-import Filament3 from "../../assets/filamentImages/Filament3"
-import Filament4 from "../../assets/filamentImages/Filament4"
-import Filament5 from "../../assets/filamentImages/Filament5"
-
+import Filament1 from "../../assets/filamentImages/Filament1.png"
+import Filament2 from "../../assets/filamentImages/Filament2.png"
+import Filament3 from "../../assets/filamentImages/Filament3.png"
+import Filament4 from "../../assets/filamentImages/Filament4.png"
+import Filament5 from "../../assets/filamentImages/Filament5.png"
 
 const FilamentLibrary = () => {
     const [filamentData] = useState([
@@ -49,7 +48,9 @@ const FilamentLibrary = () => {
         <div>
             <h2>Filament Information</h2>
             <div>
-            {}
+                {filamentData.map((filamentData, index) => (
+                    <FilamentData key={index} filamentData={filamentData} />
+                ))}
             </div>
         </div>
     )
