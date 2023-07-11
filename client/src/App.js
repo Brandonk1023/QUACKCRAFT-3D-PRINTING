@@ -55,8 +55,9 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 })
 
-function App() {
+const App = () => {
   const [currentForm, setCurrentForm] = useState('login')
+
   // RAIYA and ETHAN -- need to review where `currentForm` is used
 /*   const toggleForm = formName => {
     setCurrentForm(formName)
@@ -76,7 +77,7 @@ function App() {
                   <Route exact path="/" element={<Login />} />
                   <Route path="/contact" element={<ContactUs />} />
                   <Route path="/about" element={<AboutUs />} />
-                  {/* <Route path="/login" element={<login />} /> */}
+                  <Route path="/login" element={<Login />} />
                   <Route path="/userProfile" element={<UserProfile />} />
                   <Route path="/logout" element={<logout />} />
                   <Route path="/tutorials" element={<Tutorials />} />
