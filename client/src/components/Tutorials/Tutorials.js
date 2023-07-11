@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import SpecificTutorial from "./SpecifcTutorial";
-import DuckPrinter1 from "../../../public/assets/tutorialsImages/DuckPrinter1"
-import DuckPrinter2 from "../../../public/assets/tutorialsImages/DuckPrinter2"
-import DuckPrinter3 from "../../../public/assets/tutorialsImages/DuckPrinter3"
-import DuckPrinter4 from "../../../public/assets/tutorialsImages/DuckPrinter4"
+import DuckPrinter1 from "../../assets/tutorialsImages/DuckPrinter1.png"
+import DuckPrinter2 from "../../assets/tutorialsImages/DuckPrinter2.png"
+import DuckPrinter3 from "../../assets/tutorialsImages/DuckPrinter3.png"
+import DuckPrinter4 from "../../assets/tutorialsImages/DuckPrinter4.png"
 
 const Tutorials = () => {
     const [specificTutorial] = useState([
