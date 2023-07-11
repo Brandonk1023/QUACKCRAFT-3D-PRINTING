@@ -14,7 +14,7 @@ import Navbar from './components/navbar/navbar'
 import DonationForm from './components/donation/donationForm'
 // import HelpUs from './components/donation'
 // import HelpUsTitle from '/components/donation/HelpUs/HelpUsTitle'
-import { Register } from './components/register/Register'
+import Register from './components/register/Register'
 // imports for userProfile
 // import { AccountSettings } from "./components/userProfile/AccountSettings";
 import SimpleBar from 'simplebar-react'
@@ -76,7 +76,7 @@ const App = () => {
                   <Route path="/filaments" element={<FilamentLibrary />} />
                   <Route path="/downloadables" element={<Downloadables />} />
                   <Route path="/donate" element={<DonationForm />} />
-                  <Route path="/register" />
+                  <Route path="/register" element={<Register />} />
                 </Routes>
             </Router>
           </ChakraProvider>

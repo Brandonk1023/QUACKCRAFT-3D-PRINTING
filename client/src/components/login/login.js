@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Login(props) {
   const [email, setEmail] = useState('')
@@ -56,11 +57,9 @@ export default function Login(props) {
         />
         <button className="hover">Log in!</button>
       </form>
-      <button
+      <button>
         className="link-btn"
-        onClick={() => props.onFormSwitch('Register')}
-      >
-        Need an account? Register here!
+        <Link to="/register">Need an account? Register here!</Link>
       </button>
     </div>
   )

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-export const Register = props => {
+const Register = props => {
   const [email, setEmail] = useState('')
   const [pass, setPass] = useState('')
   const [confirmpass, setConfirmPass] = useState('')
@@ -81,9 +82,11 @@ export const Register = props => {
         />
         <button className="hover">Register!</button>
       </form>
-      <button className="link-btn" onClick={() => props.onFormSwitch('Login')}>
-        Already have an account? Login here!
+      <button className="link-btn">
+        <Link to="/login">Already have an account? Login here!</Link>
       </button>
     </div>
   )
 }
+
+export default Register
