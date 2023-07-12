@@ -33,7 +33,11 @@ This is a 3D priniting related application.  The motiviation behind building thi
 To use the application the user will go to the deployment link and then register with an account if they do not have one.  Once the user has created an account the user is able to then login and view their user profile.  The user then has access to the other areas of the site.  The user is able to look at tutorials, check out downloadble files, and see the requirement for printer filament types.
 
 
-![Login Screen](assets/LoginScreen.jpgLoginScreen.jpg)
+![Login Screen](assets/LoginScreen.jpg)
+
+![User Profile Page](assets/UserProfilePage.jpg)
+
+![Donation Page](assets/DonationPage.jpg)
 
 
 - [Click here to view the Repository URL](https://github.com/Brandonk1023/ZERO-DUCKS-GIVEN)
