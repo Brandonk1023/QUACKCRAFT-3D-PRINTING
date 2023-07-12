@@ -1,13 +1,25 @@
 .GiftFrequency {
     margin-top: 6rem;
+    display:flex;
   }
   
   .Title {
     /* color: var(--white); */
     color: var(--turquoise-green);
     padding-bottom: 0.8rem;
-    
   }
+
+.title-select {
+  color: var(--dark-green);
+}
+
+.title-name {
+  display:flex;
+  color: var(--dark-green);
+  margin-: 20%;
+  /* padding-bottom: 0.8rem; */
+}
+
   .Frequency {
     padding: 0.2rem;
     background: var(--dark-green);

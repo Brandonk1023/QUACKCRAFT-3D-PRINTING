@@ -79,8 +79,8 @@ const App = () => {
                   <Route path="/register" element={<Register />} />
                 </Routes>
             </Router>
-          {/* </ChakraProvider>
-        </SimpleBar> */}
+          {/* </ChakraProvider> */}
+        {/* </SimpleBar>  */}
       </div>
     </ApolloProvider>
   )

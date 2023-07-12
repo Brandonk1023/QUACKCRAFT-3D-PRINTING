@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Filament.css';
 import FilamentData from './FilamentData'
 import Filament1 from "../../assets/filamentImages/Filament1.png"
 import Filament2 from "../../assets/filamentImages/Filament2.png"

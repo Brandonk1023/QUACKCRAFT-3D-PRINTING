@@ -4,7 +4,7 @@ const GiftFrequency = () => {
   return (
     <div className='GiftFrequency'>
       <header className='Title'>
-        <h4>Select Gift frequency</h4>
+        <h4 className='title-name'>Select Gift frequency</h4>
       </header>
       <fieldset className='Frequency'>
         <div className='RadioWrapper'>

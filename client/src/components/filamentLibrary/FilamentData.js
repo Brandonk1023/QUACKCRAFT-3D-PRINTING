@@ -1,4 +1,5 @@
 import React from "react";
+import './Filament.css';
 
 const FilamentData = ({ filamentData }) => {
     return (

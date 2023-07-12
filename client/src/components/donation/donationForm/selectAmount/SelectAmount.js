@@ -4,7 +4,7 @@ const SelectAmount = () => {
   return (
     <div className='SelectAmount'>
       <header className='Title'>
-        <h4>Select Amount (in US dollars)</h4>
+        <h4 className='title-select'>Select Amount (in US dollars)</h4>
       </header>
       <fieldset className='Amounts'>
         {/* <div className='RadioWrapper'>
@@ -18,7 +18,7 @@ const SelectAmount = () => {
           <label htmlFor='20'>$20</label>
         </div> */}
         <div className='RadioWrapper'>
-          <input className='Radio' type='radio' name='amount' id='50' />
+          <input className='Radio' type='radio' name='amount' id='20' />
           <label htmlFor='20'>$20</label>
         </div>
         <div className='RadioWrapper'>
