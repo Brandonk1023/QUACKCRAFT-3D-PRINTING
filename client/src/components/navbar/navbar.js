@@ -12,7 +12,7 @@ function Navbar() {
       <ul>
         <li>
         <Button variant="contained">
-        <Link to="/about">About Us</Link>
+        <Link to="/about">About</Link>
         </Button>
         </li>
         <li>
@@ -32,7 +32,7 @@ function Navbar() {
         </li>
         <li>
         <Button variant="contained">
-        <Link to="/filaments">Filament Library</Link>
+        <Link to="/filaments">Filaments</Link>
         </Button>
         </li>
         <li>
