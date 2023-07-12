@@ -9,6 +9,15 @@
     color: var(--white);
     padding-bottom: 0.8rem;
   }
+
+.name-text {
+  color: var(--dark-green);
+  }
+
+ .name-input {
+  color: var(--dark-green);
+ } 
+
   
   .NameInput {
     padding: 1rem;
