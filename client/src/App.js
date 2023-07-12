@@ -7,16 +7,10 @@ import {
 } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-
-// import logo from './logo.svg';
 import './App.css'
 import Navbar from './components/navbar/navbar'
 import DonationForm from './components/donation/donationForm'
-// import HelpUs from './components/donation'
-// import HelpUsTitle from '/components/donation/HelpUs/HelpUsTitle'
 import Register from './components/register/Register'
-// imports for userProfile
-// import { AccountSettings } from "./components/userProfile/AccountSettings";
 import SimpleBar from 'simplebar-react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { theme } from './components/userProfile/helpers/index'
@@ -28,7 +22,6 @@ import Login from './components/login/login';
 import Downloadables from './components/downloadables/downloadables';
 import Tutorials from './components/Tutorials/Tutorials';
 import FilamentLibrary from './components/filamentLibrary/filamentLibrary';
-// RAIYA and ETHAN -- need to review where the above imports for logo, AccountSetting, Cover, Main are be used
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -61,8 +54,6 @@ const App = () => {
     <ApolloProvider client={client}>
 
       <div className="App">
-        {/* <SimpleBar style={{ maxHeight: '100vh' }}> */}
-          {/* <ChakraProvider theme={theme}> */}
             <Router>
               <Navbar/>
                 <Routes>
@@ -79,8 +70,6 @@ const App = () => {
                   <Route path="/register" element={<Register />} />
                 </Routes>
             </Router>
-          {/* </ChakraProvider>
-        </SimpleBar> */}
       </div>
     </ApolloProvider>
   )
