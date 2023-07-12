@@ -28,6 +28,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
     unique: true,
+    match: [/.+@.+\..+/, 'Email must match email on file!'],
   },
   password: {
     type: String,
