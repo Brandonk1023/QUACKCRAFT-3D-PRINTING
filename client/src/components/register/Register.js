@@ -80,7 +80,9 @@ const Register = props => {
           id="confirmpassword"
           name="confirmpassword"
         />
-        <button className="hover">Register!</button>
+        <button className="hover">
+          <Link to="/login">Register!</Link>
+        </button>
       </form>
       <button className="link-btn">
         <Link to="/login">Already have an account? Login here!</Link>

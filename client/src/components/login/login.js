@@ -55,7 +55,9 @@ export default function Login(props) {
           id="password"
           name="password"
         />
-        <button className="hover">Log in!</button>
+        <button className="hover">
+          <Link to="/userProfile">Log in!</Link>
+          </button>
       </form>
       <button className="link-btn">
         <Link to="/register">Need an account? Register here!</Link>
