@@ -39,7 +39,7 @@ export default function Cover() {
     }
 
     return (
-        <Box h={60} overflow="hidden">
+        <Box h={60} overflow="hidden" width="100%" mb={'20'}>
             <Image
                 w="full"
                 h="full"
@@ -50,7 +50,7 @@ export default function Cover() {
             <Button
                 onClick={openChooseFile}
                 position="absolute"
-                top={4}
+                top={55}
                 right={4}
                 variant="ghost"
             >

@@ -1,0 +1,8 @@
+.downloadables-text {
+    font-size: 2rem;
+    font-family:cursive;
+    border: 2px solid var(--dark-green);
+    background-color: var(--dark-green);
+    color: var(--white);
+    margin-bottom: 5%;
+}
