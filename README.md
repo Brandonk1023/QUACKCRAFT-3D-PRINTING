@@ -15,8 +15,6 @@
 - [Usage](#usage)
 - [Credits](credits)
 - [License](#license)
-- [Tests](#tests)
-- [Features](#features)
 - [Questions](#questions)
 
 ## Technologies:
@@ -69,7 +67,7 @@ https://devcenter.heroku.com/categories/reference
 ## License:
 This project is covered by an MIT license.
 
-## Questions/How to Contribute:
+## Questions:
 
 If you have questions about this repo, have an issue, or  need to contact the developers directly. Please reach out using the links below. [Bundleofcodes](https://github.com/bundleofcodes)
 [Brandon1023](https://github.com/brandon1023)
@@ -85,15 +83,6 @@ Provide a short description explaining the what, why, and how of your project. U
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
 - What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
