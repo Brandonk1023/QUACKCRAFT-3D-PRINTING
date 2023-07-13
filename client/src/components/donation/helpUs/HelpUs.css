@@ -8,6 +8,18 @@
   flex: 1;
 }
 
+h1 {
+  color: var(--white);
+  justify-content: space-between;
+  display: inline-block;
+  margin-right: 90%;
+  border: 2px solid var(--dark-green);
+  background-color: var(--dark-green);
+  width: 150%;
+  
+  
+}
+
 @media (min-width: 1200px) {
   .HelpUsTitle {
     font-size: 2rem;

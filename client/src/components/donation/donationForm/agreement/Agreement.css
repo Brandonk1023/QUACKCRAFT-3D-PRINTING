@@ -1,7 +1,7 @@
 .Agreement {
     display: flex;
     margin-top: 3rem;
-    color: var(--white);
+    color: var(--dark-green);
     user-select: none;
   }
   

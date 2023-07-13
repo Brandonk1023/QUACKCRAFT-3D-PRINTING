@@ -1,0 +1,28 @@
+.filaments {
+   display: flex;
+   flex-direction: column; 
+   margin-top: 100%;
+   margin-bottom: 10%;
+   
+}
+
+.filaments-header {
+   /* padding-bottom: 10%; */
+   border: 2px solid var(--dark-green);
+    background-color: var(--dark-green);
+    color: var(--white);
+    font-size: 2rem;
+    font-family:cursive;
+    /* height: 10%; */
+    /* margin-top: 50%; */
+    margin-bottom: 190%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+}
+
+.tester {
+    margin-top: 15%;
+    padding-bottom: 4%;
+}

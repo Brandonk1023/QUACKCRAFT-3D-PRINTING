@@ -6,7 +6,7 @@
     flex-direction: column;
   }
   .NameInputWrapper label {
-    color: var(--white);
+    color: var(--dark-green);
     padding-bottom: 0.8rem;
   }
 
@@ -34,6 +34,6 @@
   
   .NameInputWrapper a {
     margin-top: 1rem;
-    color: var(--light-yellow);
+    color: var(--dark-green);
     text-decoration: none;
   }

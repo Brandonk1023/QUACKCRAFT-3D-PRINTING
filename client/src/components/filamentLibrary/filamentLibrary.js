@@ -46,8 +46,9 @@ const FilamentLibrary = () => {
         }
     ])
     return (
-        <div>
-            <h2>Filament Information</h2>
+        <div className='filaments'>
+            <h2 className='filaments-header'>Filament Information</h2>
+            <p className='tester'></p>
             <div>
                 {filamentData.map((filamentData, index) => (
                     <FilamentData key={index} filamentData={filamentData} />

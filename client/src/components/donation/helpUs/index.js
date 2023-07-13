@@ -4,10 +4,10 @@ const HelpUs = () => {
   return (
     <section className='HelpUs'>
       <header className='HelpUsTitle'>
-    <h1>Help us do more</h1>
+    <h1>Donations</h1>
   </header>
       <p className='HelpUsParagraph'>
-        TEXT HERE ABOUT DONATING
+        {/* TEXT HERE ABOUT DONATING */}
       </p>
     </section>
   );
