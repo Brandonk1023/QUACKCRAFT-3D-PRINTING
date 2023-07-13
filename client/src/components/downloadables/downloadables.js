@@ -51,12 +51,13 @@ const Downloadables = () => {
         },
     ])
     return (
-        <div>
-            <h2 className='downloadables'>Downloadables</h2>
+        <div className='downloads'>
+            {/* <h2>Downloadables</h2> */}
             <section>
+                <h2 className='downloadables'>Downloadables</h2>
                 <div>
-                    <p>Please browse our downloadables below!</p>
-                    <div>{specificDownloadable.map((specificDownloadable, index) => (
+                    <p className='download-text'>Please browse our downloadables below!</p>
+                    <div className='dloads'>{specificDownloadable.map((specificDownloadable, index) => (
                     <SpecificDownloadable key={index} specificDownloadable={specificDownloadable} />
                 ))}</div>
                 </div>

@@ -1,5 +1,6 @@
-.contact-us-style {
-
+a {
+    color: var(--dark-green);
+    
 }
 
 .contact-text {

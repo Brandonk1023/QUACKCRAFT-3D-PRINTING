@@ -50,7 +50,7 @@ export default function Cover() {
             <Button
                 onClick={openChooseFile}
                 position="absolute"
-                top={55}
+                top={75}
                 right={4}
                 variant="ghost"
             >
