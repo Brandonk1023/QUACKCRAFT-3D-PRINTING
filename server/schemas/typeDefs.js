@@ -27,6 +27,9 @@ const typeDefs = gql`
     DownloadURL: String
   }
 
+  type Checkout {
+    session: ID
+  }
   type Auth {
     token: ID!
     user: User!
@@ -35,6 +38,7 @@ const typeDefs = gql`
   type Query {
     user(userId: ID): [User]
     me: User
+    checkout(session: ID!): Checkout
   }
 
   type Mutation {
@@ -45,6 +49,13 @@ const typeDefs = gql`
       email: String!
       password: String!
     ): Auth
+    updateUser(
+      userName: String!
+      firstName: String!
+      lastName: String!
+      email: String!
+      password: String!
+    ): User
     login(email: String!, password: String!): Auth
     deleteUser(userId: ID): User
   }

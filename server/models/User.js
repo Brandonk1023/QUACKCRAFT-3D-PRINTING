@@ -35,7 +35,6 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  // orders: [Order.schema]
 });
 
 // set up pre-save middleware to create hashed password BEFORE user data is saved to the database, so the pw is stored securely.

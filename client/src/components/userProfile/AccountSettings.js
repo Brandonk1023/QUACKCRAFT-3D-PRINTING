@@ -59,7 +59,7 @@ function AccountSettings() {
                 <FormLabel>Country</FormLabel>
                 <select focusBorderControl="brand.blue" placeholder="Select Country">
                 <option value="unitedstates" selected>
-                        Unites States
+                        United States
                     </option>
                     <option value="unitedkingdom">United Kingdom</option>
                     <option value="canada">Canada</option>
