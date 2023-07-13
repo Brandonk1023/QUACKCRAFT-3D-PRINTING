@@ -5,16 +5,6 @@ const mongoose = require('mongoose');
 // import the Schema class from mongoose module
 const { Schema } = mongoose;
 
-// create a new schema called userSchema with props from Schema model
-/*
-name
-type
-print temp
-printer bed temp
-print speed
-  // DO WE NEED TO ASSIGN UNIQUE ID TO THIS SCHEMA?
-
-*/
 const filamentSchema = new Schema({
   filamentType: {
     type: String,
@@ -41,7 +31,6 @@ const filamentSchema = new Schema({
     type: Number,
     required: true,
   },
-  // DO WE NEED TO ASSIGN UNIQUE ID TO THIS SCHEMA?
 });
 
 const Filament = mongoose.model('Filament', filamentSchema);

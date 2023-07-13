@@ -1,4 +1,4 @@
-/* // import the AuthenticationError class which is used to throw errors if a user is not logged in.
+// import the AuthenticationError class which is used to throw errors if a user is not logged in.
 const { AuthenticationError } = require('apollo-server-express');
 
 // import User, Filament, Downloadables models from the models directory so the data can be used by the resolvers.
@@ -79,4 +79,4 @@ const resolvers = {
 };
 
 // export the resolvers object (This object will be used by the GraphQL server to resolve queries and mutations.)
-module.exports = resolvers; */
+module.exports = resolvers;
