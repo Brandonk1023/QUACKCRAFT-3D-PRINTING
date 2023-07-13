@@ -27,7 +27,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.9.2",
     "next": "^13.4.7",
-    "stripe": "^8.67.0"
+    "stripe": "^8.67.0",
+    "@stripe/react-stripe-js": "^1.0.0",
+    "@stripe/stripe-js": "^1.0.0"
   },
   "bugs": {
     "url": "https://github.com/Brandonk1023/QUACKCRAFT-3D-PRINTING/"
