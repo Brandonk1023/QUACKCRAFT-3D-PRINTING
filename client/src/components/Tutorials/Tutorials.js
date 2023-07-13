@@ -32,7 +32,7 @@ const Tutorials = () => {
     ])
     return (
         <div className="tutorials">
-            <h2 className="tutorial-header">Tutorials</h2>
+            {/* <h2 className="tutorial-header">Tutorials</h2> */}
             <p className="tutorial-text">Please see the collected tutorials list below.  These resources belong to their respective owners and have been gathered here for ease of access.</p>
             <div>
                 {specificTutorial.map((specificTutorial, index) => (
