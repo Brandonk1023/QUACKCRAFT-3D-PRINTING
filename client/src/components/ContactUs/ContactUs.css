@@ -5,7 +5,7 @@ a {
 
 .contact-text {
     font-size: 2rem;
-    font-family:cursive;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     border: 2px solid var(--dark-green);
     background-color: var(--dark-green);
     color: var(--white);
@@ -19,5 +19,5 @@ a {
     font-size: 1.5rem;
     color: var(--dark-green);
     /* border: 2px solid; */
-    /* font-family: cursive; */
+    /* font-family: "Trebuchet MS", Helvetica, sans-serif; */
 }
