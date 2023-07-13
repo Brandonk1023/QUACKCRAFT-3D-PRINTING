@@ -41,8 +41,7 @@ To use the application the user will go to the deployment link and then register
 
 
 - [Click here to view the Repository URL](https://github.com/Brandonk1023/ZERO-DUCKS-GIVEN)
-- [Click here to view the Deployed URL]() //EDIT THIS
-
+- [Click here to view the Deployed URL](https://gentle-river-99860-f681a35f9ec5.herokuapp.com/)
 ## Credits:
 - Raiya Young (Front-end)
 - Brandon Kilgore (Back-end/Front-End/Repo-Owner)
