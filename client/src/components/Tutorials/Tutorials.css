@@ -11,7 +11,7 @@
 .tutorial-header {
     align-items: center;
     font-size: 2rem;
-    font-family:cursive;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     border: 2px solid var(--dark-green);
     background-color: var(--dark-green);
     color: var(--white);

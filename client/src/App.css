@@ -27,7 +27,7 @@
 
 .header-text {
   font-size: 25px;
-  font-family:cursive;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   border: 2px solid #173e43;
   background-color: #173e43;
   margin-bottom: 10%;
@@ -64,7 +64,7 @@ button {
 }
 
 .hover {
-  font-family: cursive;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 18px;
   border: 1px solid dimgrey;
   background-color: #fae596;
@@ -79,7 +79,7 @@ button {
 
 .link-btn {
   background: none;
-  /* font-family:cursive; */
+  /* font-family: "Trebuchet MS", Helvetica, sans-serif; */
   /* font-size: 20px; */
   padding-top: 6px;
   color: black;
@@ -102,7 +102,7 @@ button {
 }
 
 .brandlogo {
-  font-family: cursive;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.2rem;
 }
 
