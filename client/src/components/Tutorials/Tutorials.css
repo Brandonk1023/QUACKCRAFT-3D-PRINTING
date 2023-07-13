@@ -1,0 +1,30 @@
+.tutorials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    margin-bottom: 10%;
+    color: var(--white);
+}
+
+.tutorial-header {
+    align-items: center;
+    font-size: 2rem;
+    font-family:cursive;
+    border: 2px solid var(--dark-green);
+    background-color: var(--dark-green);
+    color: var(--white);
+    margin-top: 0%;
+    margin-bottom: 90%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.tutorial-text {
+    color: var(--dark-green);
+    margin-top: 10%;
+    padding-top: 20%;
+    margin-bottom: 3%;
+}

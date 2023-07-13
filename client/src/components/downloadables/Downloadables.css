@@ -1,8 +1,51 @@
-.downloadables-text {
+.downloadables{
     font-size: 2rem;
     font-family:cursive;
     border: 2px solid var(--dark-green);
     background-color: var(--dark-green);
     color: var(--white);
-    margin-bottom: 5%;
+    margin-top: 6%;
+    margin-bottom: 5%; 
+    position: absolute;
+    left: 0;
+    right: 0;
 }
+
+.download-text {
+    color: var(--dark-green);
+    margin-top: 20%;
+    margin-bottom: 2%;
+    /* padding-top: 10%; */
+}
+
+.downloads {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80%;
+    margin-bottom: 5%;
+    padding-right: 0%;
+    color: var(--white);
+}
+
+.card {
+    border: 2px solid var(--dark-green);
+    display: flex;
+    align-items: center;
+}
+
+.click-link {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .dloads {
+    margin-right: 100%;
+    width: 100%;
+} */
+
+/* .card-media {
+    display: flex;
+    flex-direction: row;
+} */

@@ -7,9 +7,9 @@ import Button from '@mui/material/Button';
 
 const FilamentData = ({ filamentData }) => {
     return (
-        <Card sx={{ maxWidth: 400 }}>
+        <Card sx={{ maxWidth: 800 }} className='card'>
             <CardMedia>
-            <img height="375" width="375" src={filamentData.image} alt={filamentData.filamentType} />
+            <img height="300" width="375" src={filamentData.image} alt={filamentData.filamentType} />
             </CardMedia>
             <CardContent>
             <h3>{filamentData.filamentType}</h3>
