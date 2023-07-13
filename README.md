@@ -47,13 +47,14 @@ To use the application the user will go to the deployment link and then register
 - Raiya Young (Front-end)
 - Brandon Kilgore (Back-end/Front-End/Project-Manager)
 - Lillian Hughes (Back-end)
-- CJ (TA)
+- CJ  Jordan(TA)
 - Andres Inciarte (TA)
 - Mety (Full-Stack Developer)
 - Web Dev
 - Pooria Faramarzian
 - Judy (Tutor)
 - Dru Sanchez (Tutor)
+- Dominique Meeks Gombe(Tutor)
 
 Material UI Documentation:
 https://mui.com/
