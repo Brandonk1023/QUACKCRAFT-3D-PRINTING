@@ -47,6 +47,12 @@ To use the application the user will go to the deployment link and then register
 - Brandon Kilgore (Back-end/Front-End/Repo-Owner)
 - Lillian Hughes (Back-end)
 - CJ (TA)
+- Andres Inciarte (TA)
+- Mety (Full-Stack Developer)
+- Web Dev
+- Pooria Faramarzian
+- Judy (Tutor)
+- Dru Sanchez (Tutor)
 
 Material UI Documentation:
 https://mui.com/
