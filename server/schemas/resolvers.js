@@ -8,9 +8,7 @@ const { User, Filament, Downloadables } = require('../models');
 // import signToken function to create a JWT token that can be used to authenticate users
 const { signToken } = require('../utils/auth.js');
 // import Stripe and the test secret API key
-const stripe = require('stripe')(
-  'sk_test_51NSPmzFLQC0FtCj6nF5wDo2u00ABRWitKOq0C85DMrNwCuuq0HwxAeTi8BL0fRzCXIszWTVWXkT2pLs3pWvKvRVn00bBEMBMwj'
-);
+const stripe = require('stripe')(process.env.STRIPEKEY);
 
 // define resolvers object (this contains the resolvers for the different fields in the GraphQL schema)
 
@@ -28,6 +26,7 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+
     // LIL TODO: checkout resolver... 'a special resolver that is used to create a Stripe checkout session'
     // Note to all: Stripe expects price amounts in cents so we need to add the * 100
     checkout: async (parent, args, context) => {
@@ -77,7 +76,6 @@ const resolvers = {
       return { token, user };
     },
   },
-  // NEED TO ADD A checkout resolver... 'a special resolver that is used to create a Stripe checkout session'
 };
 
 // export the resolvers object (This object will be used by the GraphQL server to resolve queries and mutations.)
