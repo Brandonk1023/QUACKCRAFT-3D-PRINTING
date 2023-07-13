@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a 3D priniting related application.  The motiviation behind building this project was to create a centralized application for 3D Printing needs.  The application is intended to allow users access to tutorials, downloadable print files, Filament information, and for future development social interactions and scoring.  In building this application the we were able to work on honing our skills with REACT, and back end technologies.
+This is a 3D priniting related application.  The motiviation behind building this project was to create a centralized application for 3D Printing needs.  The application is intended to allow users access to tutorials, downloadable print files, Filament information, and for future development social interactions and scoring.  In building this application the we were able to work on honing our skills with REACT, Front-End and Back-End technologies.
 
 
 
@@ -27,6 +27,7 @@ This is a 3D priniting related application.  The motiviation behind building thi
 - Chakara UI
 
 ## Installation:
+ No installation is necessry.  Just launch the application in browser or follow the deployment link below"
 
 
 ## Usage:
@@ -44,7 +45,7 @@ To use the application the user will go to the deployment link and then register
 - [Click here to view the Deployed URL](https://gentle-river-99860-f681a35f9ec5.herokuapp.com/)
 ## Credits:
 - Raiya Young (Front-end)
-- Brandon Kilgore (Back-end/Front-End/Repo-Owner)
+- Brandon Kilgore (Back-end/Front-End/Project-Manager)
 - Lillian Hughes (Back-end)
 - CJ (TA)
 - Andres Inciarte (TA)
